@@ -24,7 +24,9 @@ module.exports = {
       '5': '12rem',
      },
     extend: {
-      colors: {},
+      colors: {
+        'title-color':'#F44336'
+      },
       zIndex: {
         "z-minus": '-1',
       }

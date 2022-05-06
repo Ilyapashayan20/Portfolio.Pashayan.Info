@@ -1,5 +1,5 @@
 <template>
-<div class="wrapper">
+<div class="wrapper pb-24">
 
 <div id="Home" class="  m-auto px-32">
 
@@ -51,9 +51,8 @@
        
     </div>
 </div>
-
-
-
+   <About class="px-32" />
+   <Skills class="px-32" />
 </div>
 
 
@@ -64,9 +63,11 @@
 
 import gsap from 'gsap'
 import  Navbar from '../components/Navbar.vue'
+import About from '../views/About.vue'
+import Skills from '../views/Skills.vue'
 
 export default {
-    components: {Navbar},
+    components: {Navbar,About,Skills},
     setup(){
         const beforeEnter = (el) =>{
             el.style.transform = 'translateX(-50px)'
@@ -172,6 +173,7 @@ export default {
        background-image: url("../Img/groups/gp.png");
        background-size:cover;
        width: 100%;
+      
     
   }
   .social-media {
